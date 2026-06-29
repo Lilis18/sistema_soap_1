@@ -1,0 +1,22 @@
+[package]
+name = "rust_soap_web"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", features = ["json"] }
+regex = "1.10"
+
+[[bin]]
+name = "v1"
+path = "src/bin/v1.rs"
+
+[[bin]]
+name = "v2"
+path = "src/bin/v2.rs"
+
+[[bin]]
+name = "v3"
+path = "src/bin/v3.rs"
